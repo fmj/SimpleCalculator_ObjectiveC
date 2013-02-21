@@ -15,7 +15,12 @@
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (weak) IBOutlet NSTextField *txtResult;
+
 
 - (IBAction)saveAction:(id)sender;
+- (IBAction)DoCalc:(id)sender;
+
+
 
 @end

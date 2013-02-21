@@ -7,6 +7,7 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "Calculator.h"
 
 @interface TestTDDTests : SenTestCase
 

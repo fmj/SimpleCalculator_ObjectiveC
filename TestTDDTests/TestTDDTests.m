@@ -8,25 +8,46 @@
 
 #import "TestTDDTests.h"
 
-@implementation TestTDDTests
 
+@implementation TestTDDTests
+Calculator* calc;
 - (void)setUp
 {
     [super setUp];
-    
-    // Set-up code here.
-}
+    calc = [[Calculator alloc] init];
+	
+    }
 
 - (void)tearDown
 {
     // Tear-down code here.
-    
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testEmptyString
 {
-    STFail(@"Unit tests are not implemented yet in TestTDDTests");
+	STAssertEquals([calc Add:@""],0 , @"no valid result returned");
+}
+
+- (void)testSimpleString
+{
+	STAssertEquals([calc Add:@"1"], 1, @"no valid result returned");
+}
+
+- (void) testDelimitedString
+{
+	STAssertEquals([calc Add:@"1,2"],3, @"Wrong value returned");
+}
+
+- (void) testDelimitedStringNewLine
+{
+	STAssertEquals([calc Add:@"1\n2\n4"],7, @"Wrong value returned");
+}
+
+
+- (void) testDelimitedStringMixed
+{
+	STAssertEquals([calc Add:@"1,2\n3"],6, @"Wrong value returned");
 }
 
 @end

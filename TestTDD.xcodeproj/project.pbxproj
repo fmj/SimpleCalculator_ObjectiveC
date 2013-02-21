@@ -18,6 +18,7 @@
 		E9F3848916D57B310087E8CD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F3846616D57B310087E8CD /* Cocoa.framework */; };
 		E9F3849116D57B310087E8CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9F3848F16D57B310087E8CD /* InfoPlist.strings */; };
 		E9F3849416D57B310087E8CD /* TestTDDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F3849316D57B310087E8CD /* TestTDDTests.m */; };
+		E9F384BB16D57C480087E8CD /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F384BA16D57C480087E8CD /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		E9F3849016D57B310087E8CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E9F3849216D57B310087E8CD /* TestTDDTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTDDTests.h; sourceTree = "<group>"; };
 		E9F3849316D57B310087E8CD /* TestTDDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTDDTests.m; sourceTree = "<group>"; };
+		E9F384B916D57C480087E8CD /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		E9F384BA16D57C480087E8CD /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				E9F3847B16D57B310087E8CD /* MainMenu.xib */,
 				E9F3847E16D57B310087E8CD /* TestTDD.xcdatamodeld */,
 				E9F3846D16D57B310087E8CD /* Supporting Files */,
+				E9F384B916D57C480087E8CD /* Calculator.h */,
+				E9F384BA16D57C480087E8CD /* Calculator.m */,
 			);
 			path = TestTDD;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 				E9F3847316D57B310087E8CD /* main.m in Sources */,
 				E9F3847A16D57B310087E8CD /* AppDelegate.m in Sources */,
 				E9F3848016D57B310087E8CD /* TestTDD.xcdatamodeld in Sources */,
+				E9F384BB16D57C480087E8CD /* Calculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +462,7 @@
 				E9F3849916D57B310087E8CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9F3849A16D57B310087E8CD /* Build configuration list for PBXNativeTarget "TestTDDTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +471,7 @@
 				E9F3849C16D57B310087E8CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

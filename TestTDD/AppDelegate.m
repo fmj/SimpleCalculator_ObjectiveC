@@ -13,6 +13,7 @@
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize managedObjectContext = _managedObjectContext;
+@synthesize txtResult;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -132,6 +133,11 @@
     if (![[self managedObjectContext] save:&error]) {
         [[NSApplication sharedApplication] presentError:error];
     }
+}
+
+- (IBAction)DoCalc:(id)sender {
+	
+	txtResult.stringValue = @"test";
 }
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender
